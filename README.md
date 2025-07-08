@@ -64,14 +64,3 @@ This dashboard helps businesses:
 - Metric calculation and formatting (currency, percentages, averages)
 - Filtering, pivot tables, and advanced chart types (gauge, funnel)
 
----
-
-## 📎 Next Steps
-
-Future enhancements may include:
-- Adding profit margin analysis (if cost data is available)
-- Creating SLA-based shipping metrics
-- Setting up automatic alerts for high cancellation rates
-
----
-
