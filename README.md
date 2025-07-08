@@ -61,6 +61,6 @@ This dashboard helps businesses:
 
 - SQL for data cleaning and transformation (BigQuery)
 - Dashboard design and interactivity (Looker Studio)
-- Metric calculation and formatting (currency, percentages, averages)
-- Filtering, pivot tables, and advanced chart types (gauge, funnel)
+- Metric calculation and formatting
+- Filtering, pivot tables, and advanced chart types
 
