@@ -14,11 +14,11 @@ SELECT
   COUNTIF(Amount IS NULL) AS null_Amount,
   COUNTIF(B2B IS NULL) AS null_B2B,
   COUNTIF(Currency IS NULL) AS null_Currency
-FROM `e-commerce-sales-464921.ECM.AmazonSaleReport`;
+FROM `your_project.your_dataset.AmazonSaleReport`;
 
 
   -- Parse date from string: '05-29-22' → 2022-05-29
-CREATE OR REPLACE VIEW `e-commerce-sales-464921.ECM.AmazonSaleReport_Cleaned` AS
+CREATE OR REPLACE VIEW `your_project.your_dataset.AmazonSaleReport_Cleaned` AS
 SELECT
   `index` AS Index,
   `Order ID` AS Order_ID,
@@ -54,7 +54,7 @@ SELECT
   `fulfilled-by` AS Fulfilled_By
 
 FROM 
-  `e-commerce-sales-464921.ECM.AmazonSaleReport`
+  `your_project.your_dataset.AmazonSaleReport`
 
 --Total Records: 128,975
 --select count(*) from `e-commerce-sales-464921.ECM.AmazonSaleReport_Cleaned`;
@@ -62,7 +62,7 @@ FROM
 
 /* Finalize for Looker Studio*/
 
-CREATE OR REPLACE VIEW `e-commerce-sales-464921.ECM.AmazonSaleReport_Final` AS
+CREATE OR REPLACE VIEW `your_project.your_dataset.AmazonSaleReport_Final` AS
 SELECT
   *,
   
@@ -99,5 +99,5 @@ SELECT
     ELSE 'Other'
   END AS Fulfilment_Type
 
-FROM `e-commerce-sales-464921.ECM.AmazonSaleReport_Cleaned`
+FROM `your_project.your_dataset.AmazonSaleReport_Cleaned`
 
